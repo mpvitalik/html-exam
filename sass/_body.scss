@@ -1,0 +1,16 @@
+body {
+    margin-top: 30px;
+    font-family: Arial;
+
+    @media screen and (max-width: 1000px) {
+        margin: 30px 55px;
+    }
+
+    @media screen and (max-width: 750px) {
+        margin: 30px 160px;
+    }
+
+    @media screen and (max-width: 500px) {
+        margin: 30px 35px;
+    }
+}

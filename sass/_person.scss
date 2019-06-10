@@ -1,0 +1,78 @@
+.person {
+    position: relative;
+    width: 200px;
+    height: 231px;
+    margin-bottom: 50px;
+    // border: 1px solid;
+    text-align: center;
+
+    &:hover {
+        width: 264px;
+        height: 344px;
+        background: #EEEEEE;
+        border-radius: 12px;
+        padding: 12px 12px 0 12px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    &:hover &__rank {
+        right: 28px;
+        transition: 1s;
+    }
+
+    &:hover img {
+        width: 240px;
+        height: 240px;
+        border-radius: 60px;
+        transition: 1s;
+    }
+
+    &:hover &__extra {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    & img {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        margin-bottom: 8px;
+    }
+
+    &__rank {
+        position: absolute;
+        top: 84px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: bold;
+        color: #8B0000;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-size: 20px;
+        line-height: 23px;
+        color: #2F4F4F;
+        margin-bottom: 11px;
+    }
+
+    &__extra {
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        opacity: 0;
+    }
+}
