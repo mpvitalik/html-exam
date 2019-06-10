@@ -35,11 +35,13 @@ body {
 }
 
 .person {
-  position: relative;
   width: 200px;
   height: 231px;
   margin-bottom: 50px;
   text-align: center;
+}
+.person__photo {
+  position: relative;
 }
 .person:hover {
   width: 264px;
@@ -51,7 +53,7 @@ body {
   transition: 1s;
 }
 .person:hover .person__rank {
-  right: 28px;
+  right: 24px;
   transition: 1s;
 }
 .person:hover img {
@@ -101,6 +103,12 @@ body {
   line-height: 21px;
   color: #000000;
   opacity: 0;
+}
+.person__pay::before {
+  content: "$";
+}
+.person__pay::after {
+  content: "M";
 }
 
 /*# sourceMappingURL=styles.css.map */

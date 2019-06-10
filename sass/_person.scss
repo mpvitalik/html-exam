@@ -1,10 +1,12 @@
 .person {
-    position: relative;
     width: 200px;
     height: 231px;
     margin-bottom: 50px;
-    // border: 1px solid;
     text-align: center;
+
+    &__photo {
+        position: relative;
+    }
 
     &:hover {
         width: 264px;
@@ -17,7 +19,7 @@
     }
 
     &:hover &__rank {
-        right: 28px;
+        right: 24px;
         transition: 1s;
     }
 
@@ -74,5 +76,13 @@
         line-height: 21px;
         color: #000000;
         opacity: 0;
+    }
+
+    &__pay::before {
+        content: "$";
+    }
+
+    &__pay::after {
+        content: "M";
     }
 }
